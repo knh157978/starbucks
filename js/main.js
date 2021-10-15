@@ -10,8 +10,7 @@ searchElInputEl.addEventListener('focus', function () {
 searchElInputEl.addEventListener('blur', function () {
     searchEl.classList.remove("focused");
     searchElInputEl.setAttribute('placeholder', '');
-});
-const badgeEl= document.querySelector('header .badges');
+});const badgeEl= document.querySelector('header .badges');
 const toTopEl =  document.querySelector('#to-top');
 window.addEventListener('scroll', _.throttle(function(){
     console.log(window.scrollY)
@@ -164,5 +163,3 @@ spyEls.forEach(function(spyEl){
     .addTo(new ScrollMagic.Controller());
 });
 
-const thisYear =  document.querySelector('.this-year');
-thisYear.textContent =  new Date().getFullYear();
